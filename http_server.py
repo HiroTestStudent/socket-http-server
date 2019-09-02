@@ -96,6 +96,9 @@ def response_path(path):
         response_path('/a_page_that_doesnt_exist.html') -> Raises a NameError
 
     """
+
+    # Vamsi's code for response_path method.
+
     try:
         with open('webroot' + path, 'rb') as f:
             content = f.read()
